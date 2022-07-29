@@ -274,7 +274,7 @@ contract Titano is ERC20Detailed, Ownable, ReentrancyGuard {
 
         require(
             newDividendTracker.owner() == address(this),
-            "Titano: The new dividend tracker must be owned by the BabyXRP contract"
+            "Titano: The new dividend tracker must be owned by the Titano contract"
         );
 
         newDividendTracker.excludeFromDividends(address(newDividendTracker));
